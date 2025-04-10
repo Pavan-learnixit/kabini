@@ -9,11 +9,22 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preload" as="image" href="images/img1.jpg" />
+    <link rel="preload" as="image" href="images/img2.jpg" />
+    <link rel="preload" as="image" href="images/img3.jpg" />
+    <link rel="preload" as="image" href="images/img4.jpg" />
+    <link rel="preload" as="image" href="images/kabini.jpg" />
+    <link rel="preload" as="image" href="images/kbn-removebg-preview.png" />
+    <link rel="preload" as="image" href="images/menu1.jpg" />
+    <link rel="preload" as="image" href="images/menu2.jpg" />
+    <link rel="preload" as="image" href="images/menu3.jpg" />
+    <link rel="preload" as="image" href="images/menu4.jpg" />
+
   </head>
   <body>
     <nav>
       <div class="nav-left">
-        <img src="images/kbn-removebg-preview.png" alt="Shri Kabini Logo" />
+        <img src="images/kbn-removebg-preview.png" alt="Shri Kabini Logo" loading="lazy" />
       </div>
 
       <div class="hamburger" id="hamburger">☰</div>
@@ -30,27 +41,31 @@
     <header id="home">
       <div class="carousel">
         <img
-          src="/images/img1.jpg"
+        loading="lazy"
+          src="images/img1.jpg"
           alt="Wildlife 1"
           class="carousel-img active"
         />
-        <img src="images/img2.jpg" alt="Wildlife 2" class="carousel-img" />
-        <img src="images/img3.jpg" alt="Wildlife 3" class="carousel-img" />
-        <img src="images/img4.jpg" alt="Wildlife 4" class="carousel-img" />
+        <!-- <img src="images/img1.jpg" alt="Wildlife 1" class="carousel-img" loading="lazy" /> -->
+
+        <img src="images/img2.jpg" alt="Wildlife 2" class="carousel-img" loading="lazy" />
+        <img src="images/img3.jpg" alt="Wildlife 3" class="carousel-img" loading="lazy"/>
+        <img src="images/img4.jpg" alt="Wildlife 4" class="carousel-img" loading="lazy" />
       </div>
 
       <div class="header-content">
         <!-- <img src="/mnt/data/kabini.jpg" alt="Shri Kabini Logo"> -->
         <h1>Welcome to Shri Kabini</h1>
         <p>A Wild Dining Experience Inspired by Nature</p>
-        <button class="btn">Explore Menu</button>
+        <button class="btn" id="exploreBtn">Explore Menu</button>
+
       </div>
     </header>
 
     <section id="about">
       <div class="about-container">
         <div class="about-image">
-          <img src="images/kabini.jpg" alt="Shri Kabini Logo" />
+          <img src="images/kabini.jpg" alt="Shri Kabini Logo" loading="lazy" />
         </div>
         <div class="about-text">
           <h2>About Us</h2>
@@ -78,22 +93,22 @@
 
       <div class="menu-grid">
         <div class="menu-item">
-          <img src="images//menu1.jpg" alt="Jungle Grill" />
+          <img src="images//menu1.jpg" alt="Jungle Grill" loading="lazy" />
           <h3>Jungle Grill Platter</h3>
           <p>Smoked meats with wild herbs and signature kabini spices.</p>
         </div>
         <div class="menu-item">
-          <img src="images//menu2.jpg" alt="Tribal Curry" />
+          <img src="images//menu2.jpg" alt="Tribal Curry" loading="lazy" />
           <h3>Tribal Chicken Curry</h3>
           <p>Cooked in earthen pots with traditional tribal techniques.</p>
         </div>
         <div class="menu-item">
-          <img src="images//menu3.jpg" alt="Forest Fruit Dessert" />
+          <img src="images//menu3.jpg" alt="Forest Fruit Dessert" loading="lazy" />
           <h3>Forest Fruit Delight</h3>
           <p>A sweet mix of wild berries, honey, and local cream.</p>
         </div>
         <div class="menu-item">
-          <img src="images//menu4.jpg" alt="Herbal Rice" />
+          <img src="images//menu4.jpg" alt="Herbal Rice" loading="lazy" />
           <h3>Herbal Bamboo Rice</h3>
           <p>Unique forest rice infused with seasonal green herbs.</p>
         </div>
@@ -111,30 +126,30 @@
       <div class="gallery-grid">
         <!-- Wildlife Images -->
         <div class="gallery-item">
-          <img src="images/img1.jpg" alt="Elephant in forest" />
+          <img src="images/img1.jpg" alt="Elephant in forest" loading="lazy"/>
         </div>
         <div class="gallery-item">
-          <img src="images/img2.jpg" alt="Deer in Kabini" />
+          <img src="images/img2.jpg" alt="Deer in Kabini" loading="lazy" />
         </div>
         <div class="gallery-item">
-          <img src="images/img3.jpg" alt="Tiger resting" />
+          <img src="images/img3.jpg" alt="Tiger resting" loading="lazy" />
         </div>
 
         <!-- Dish Images -->
         <div class="gallery-item">
-          <img src="images/img4.jpg" alt="Tribal curry" />
+          <img src="images/img4.jpg" alt="Tribal curry" loading="lazy" />
         </div>
         <div class="gallery-item">
-          <img src="images/menu1.jpg" alt="Jungle grilled platter" />
+          <img src="images/menu1.jpg" alt="Jungle grilled platter" loading="lazy" />
         </div>
         <div class="gallery-item">
-          <img src="images/menu2.jpg" alt="Wild fruit dessert" />
+          <img src="images/menu2.jpg" alt="Wild fruit dessert" loading="lazy" />
         </div>
         <div class="gallery-item">
-          <img src="images/menu3.jpg" alt="Jungle grilled platter" />
+          <img src="images/menu3.jpg" alt="Jungle grilled platter" loading="lazy" />
         </div>
         <div class="gallery-item">
-          <img src="images/menu4.jpg" alt="Wild fruit dessert" />
+          <img src="images/menu4.jpg" alt="Wild fruit dessert" loading="lazy" />
         </div>
       </div>
     </section>

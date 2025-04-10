@@ -7,6 +7,10 @@ const navLinks = document.getElementById('nav-links');
 hamburger.addEventListener('click', () => {
 navLinks.classList.toggle('active');
 });
+document.getElementById('exploreBtn').addEventListener('click', () => {
+  document.querySelector('#menu').scrollIntoView({ behavior: 'smooth' });
+});
+
 setInterval(() => {
   images[current].classList.remove('active');
   current = (current + 1) % images.length;
